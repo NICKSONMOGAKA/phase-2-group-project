@@ -1,0 +1,29 @@
+.ProductList {
+  border: 2px solid black;
+  background-color: rgb(87, 83, 83);
+  color: white;
+  font-size: 20px;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 5px;
+}
+.product-item {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #1b1b1b;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  background-color: white;
+}
+.product-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+}
