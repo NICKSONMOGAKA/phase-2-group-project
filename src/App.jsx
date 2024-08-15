@@ -9,6 +9,7 @@ import Footer from "./Footer";
 import NavBar from "./components/NavBar";
 import About from './components/About';
 import Contact from './components/Contact';
+import InputForm from "./components/InputForm";
 
 function App() {
   const [selectedProductId, setSelectedProductId] = useState(null);
@@ -34,6 +35,7 @@ function App() {
           path="/purchase"
           element={<PurchaseItem id={selectedProductId} />}
         />
+         <Route path="/signup" element={<InputForm />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
