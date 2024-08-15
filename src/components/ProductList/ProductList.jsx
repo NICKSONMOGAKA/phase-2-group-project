@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-
 import "./ProductList.css";
-const ProductList = () => {
+import { useNavigate } from "react-router-dom";
+
+const ProductList = ({displayDetails}) => {
   const [products, setProducts] = useState([]);
   const [category, setCategory] = useState("");
-  const [search, setSearch] = useState("");
+  const navigate=useNavigate()
+
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -17,11 +19,16 @@ const ProductList = () => {
     setCategory(event.target.value);
   };
 
+  const handleItemClick = (id) => {
+    displayDetails(id);
+    navigate(`/product-details/${id}`);
+  };
+
   const filteredAndSortedProducts = products
     .filter(
       (product) =>
         (category ? product.category === category : true) &&
-        product.title.toLowerCase().includes(search.toLowerCase())
+        product.title.toLowerCase()
     )
     .sort((a, b) => a.title.localeCompare(b.title));
 
@@ -40,7 +47,7 @@ const ProductList = () => {
 
       <ul className="product-list">
         {filteredAndSortedProducts.map((product) => (
-          <li key={product.id} className="ItemList">
+          <li onClick={() => handleItemClick(product.id)} key={product.id} className="ItemList">
             <img
               className="product-image"
               src={product.image}

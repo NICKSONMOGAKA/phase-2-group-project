@@ -3,7 +3,7 @@ import React from "react";
 import "./Category.css";
 import ProductList from "../ProductList/ProductList";
 
-function CategoryPage() {
+function CategoryPage({displayDetails}) {
   return (
     <div>
       <div>
@@ -11,7 +11,7 @@ function CategoryPage() {
       </div>
 
       <div className="ProductList">
-        <ProductList />
+        <ProductList displayDetails={displayDetails}/>
       </div>
     </div>
   );
