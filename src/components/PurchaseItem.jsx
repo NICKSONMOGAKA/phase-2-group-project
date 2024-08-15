@@ -18,7 +18,7 @@ const PurchaseItem = ({ id }) => {
 
   const handlePurchase = (e) => {
     e.preventDefault();
-    setMessage("You have purchased this item");
+    alert("You have purchased this item");
   };
 
   const handleBack = () => {
@@ -26,13 +26,13 @@ const PurchaseItem = ({ id }) => {
   };
 
   return (
-    <div>
-      <p>Product: {product.title}</p>
+    <div className="ProductDetails">
+      <p>Product: {product.title}</p><br/>
       <img src={product.image} alt="product" />
-      <p>Price: ${product.price}</p>
+      <p>Price: ${product.price}</p><br/>
       {message && <p>{message}</p>}
-      <button onClick={handlePurchase}>Purchase</button>
-      <button onClick={handleBack}>Back</button>
+      <button className="green" onClick={handlePurchase}>Purchase</button>
+      <button className="red"onClick={handleBack}>Back</button>
     </div>
   );
 };

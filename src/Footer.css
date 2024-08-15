@@ -8,11 +8,9 @@ body {
   align-items: baseline;
   justify-content: baseline;
   flex-direction: column-reverse;
+  
 }
 
-.main-content {
-  flex: 1; 
-}
 
 .footer {
   background-color: #000; 

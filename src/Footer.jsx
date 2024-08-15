@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <section className="footer-links">
-          <h4><a href="#about">About ShopEase</a></h4>
+          <h4><a href="#about">ShopEase</a></h4>
           <p>ShopEase is your go-to destination for a seamless online shopping experience. Discover top brands, exclusive deals, and much more.</p>
         </section>
 

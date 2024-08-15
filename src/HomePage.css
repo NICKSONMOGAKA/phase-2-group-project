@@ -1,11 +1,11 @@
 /* Reset some default browser styles */
 body, h1, h2, h3, p, a {
-    margin: 0;
+    margin:0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
-  /* Basic layout */
+  Basic layout
   .header {
     background-color: #333;
     color: #fff;
@@ -111,10 +111,4 @@ body, h1, h2, h3, p, a {
     background-color: #ff4500;
   }
   
-  .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-  }
   

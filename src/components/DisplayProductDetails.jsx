@@ -16,22 +16,27 @@ const DisplayProductDetails = () => {
   }, [id]);
 
   const handlePurchaseClick = () => {
-    navigate('/purchase');
+    navigate("/purchase");
   };
 
   const handleBack = () => {
-    navigate(-1); 
+    navigate(-1);
   };
 
   return (
-    <div>
-      <p>Title: {details.title}</p>
-      <p>Price: {details.price}</p>
-      <p>Description: {details.description}</p>
-      <p>Category: {details.category}</p>
-      <img src={details.image} alt="product image"></img>
-      <button onClick={handlePurchaseClick}>Go to purchase</button>
-      <button onClick={handleBack}>Back</button>
+    <div className="ProductName">
+      <div className="ProductDetails">
+        <p>Title: {details.title}</p>
+        <br />
+        <p>Price: {details.price}</p><br/>
+        <p>Description: {details.description}</p><br/>
+        <p>Category: {details.category}</p><br/>
+      </div>
+      <div className="ProductImage">
+        <img src={details.image} alt="product image"></img>
+        <button className="green"onClick={handlePurchaseClick}>Go to purchase</button>
+        <button className="red"onClick={handleBack}>Back</button>
+      </div>
     </div>
   );
 };
