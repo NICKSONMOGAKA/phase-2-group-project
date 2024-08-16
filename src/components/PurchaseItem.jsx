@@ -18,7 +18,8 @@ const PurchaseItem = ({ id }) => {
 
   const handlePurchase = (e) => {
     e.preventDefault();
-    alert("You have purchased this item");
+    
+    navigate("/signup");
   };
 
   const handleBack = () => {

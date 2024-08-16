@@ -15,7 +15,7 @@ ShopEase is an e-commerce application that allows users to browse and purchase a
 - **Product Browsing:** Users can browse products by category, view all available items, and filter products based on their interests.
 - **Product Details:** Upon clicking on a product, detailed information such as title, price, description, and category is displayed.
 - **Seamless Navigation:** The application includes navigation between different pages such as Home, About, Products, and Contact, ensuring easy access to various sections.
-- **Purchase Functionality:** Users can proceed to purchase an item from the product details page.
+- **Purchase Functionality:** Users can proceed to purchase an item from the product details page. The user can also enter their account details before making a purchase.
 - **Responsive Footer:** The footer includes essential links, social media icons, and a comment section where users can leave feedback.
 
 ## Getting Started
@@ -52,6 +52,7 @@ ShopEase is an e-commerce application that allows users to browse and purchase a
 
 ### Making a Purchase:
 - On the purchase page, users can confirm the product details and make a purchase by clicking the "Purchase" button.
+- Once the user clicks this button, they are redirected to another page where they can fill out their account details and cash out.
 
 ### Additional Pages:
 - **About Page:** Provides information about the ShopEase platform.
